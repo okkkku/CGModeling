@@ -36,6 +36,8 @@ class ThreeJSContainer {
         let orbitControls = new three_examples_jsm_controls_OrbitControls__WEBPACK_IMPORTED_MODULE_0__.OrbitControls(camera, renderer.domElement);
         orbitControls.target.set(0, 10, 0);
         orbitControls.maxPolarAngle = Math.PI / 2;
+        orbitControls.minDistance = 10;
+        orbitControls.maxDistance = 100;
         this.createScene();
         // 毎フレームのupdateを呼んで，render
         // reqestAnimationFrame により次フレームを呼ぶ
