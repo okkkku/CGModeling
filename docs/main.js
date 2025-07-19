@@ -71,7 +71,7 @@ class ThreeJSContainer {
             });
             return object;
         };
-        const mesh = loadOBJ("/Tree.obj", "/Tree.mtl");
+        const mesh = loadOBJ("Tree.obj", "Tree.mtl");
         mesh.scale.set(2, 2, 2);
         this.scene.add(mesh);
         let generateSprite = (color) => {
