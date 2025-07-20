@@ -38,6 +38,7 @@ class ThreeJSContainer {
         orbitControls.maxPolarAngle = Math.PI / 2;
         orbitControls.minDistance = 10;
         orbitControls.maxDistance = 100;
+        orbitControls.enablePan = false;
         this.createScene();
         // 毎フレームのupdateを呼んで，render
         // reqestAnimationFrame により次フレームを呼ぶ
